@@ -13,10 +13,6 @@ const AboutSection = () => {
                         className="relative"
                     >
                         <img src="/about.png" alt="Yoga Studio" className="w-full rounded-2xl shadow-xl" style={{ borderRadius: '20px', width: '100%', objectFit: 'cover', height: '500px' }} />
-                        <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg hidden md:block" style={{ position: 'absolute', bottom: '-20px', right: '-20px', background: 'white', padding: '2rem', borderRadius: '15px', boxShadow: 'var(--shadow)' }}>
-                            <span className="block text-4xl font-bold text-primary" style={{ color: 'var(--primary)', fontSize: '2.5rem', fontWeight: 'bold' }}>10+</span>
-                            <span className="text-gray-600">Yıllık Tecrübe</span>
-                        </div>
                     </motion.div>
 
                     <motion.div

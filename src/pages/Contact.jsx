@@ -97,20 +97,22 @@ const ContactSection = () => {
                     </div>
 
                     {/* Google Form Integration */}
-                    <div className="bg-white rounded-2xl shadow-sm" style={{ background: 'white', borderRadius: '15px', padding: '1.5rem', boxShadow: 'var(--shadow)', overflow: 'hidden' }}>
-                        <h3 className="text-2xl font-bold mb-6" style={{ marginBottom: '1.5rem', padding: '0.5rem 0.5rem 0' }}>Mesaj Gönder</h3>
-                        <div style={{ width: '100%', height: '700px', overflow: 'hidden', position: 'relative' }}>
+                    <div className="bg-white rounded-2xl shadow-sm contact-form-card" style={{ background: 'white', borderRadius: '15px', boxShadow: 'var(--shadow)', overflow: 'hidden' }}>
+                        <h3 className="text-2xl font-bold mb-6 text-center-mobile" style={{ marginBottom: '1.5rem', padding: '1.5rem 1.5rem 0' }}>Mesaj Gönder</h3>
+                        <div className="iframe-container" style={{ width: '100%', height: '750px', overflow: 'hidden', position: 'relative' }}>
                             <iframe
                                 src="https://docs.google.com/forms/d/e/1FAIpQLSdgTx0ACFXuhdxQTU1PQ-liRbTItch1XZKBNIa5y5Oreg5tkw/viewform?embedded=true"
                                 width="100%"
-                                height="700"
+                                height="850"
                                 frameBorder="0"
                                 marginHeight="0"
                                 marginWidth="0"
                                 style={{
                                     border: 'none',
                                     width: '100%',
-                                    marginTop: '-110px' // Hide the "İletişim Formu" title to make it cleaner
+                                    position: 'absolute',
+                                    top: '-110px', // Hide the "İletişim Formu" title
+                                    left: 0
                                 }}
                             >
                                 Yükleniyor…
