@@ -45,7 +45,7 @@ const ClassesSection = () => {
                         transition={{ duration: 0.4 }}
                         className="class-detail"
                     >
-                        <img src="https://images.unsplash.com/photo-1599447421405-0c17414ab7fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Yoga" style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '12px' }} className="mb-6 shadow-md" />
+                        <img src="/yoga-new.png" alt="Yoga" style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '12px' }} className="mb-6 shadow-md" />
                         <h3 className="flex items-center-mobile justify-center-mobile gap-3 text-center-mobile">
                             <FaSpa className="text-primary" /> Vinyasa & Yin Yoga
                         </h3>
@@ -137,31 +137,44 @@ const ClassesSection = () => {
                     <h2>Hakkında Detaylı Bilgi Al</h2>
                 </div>
 
-                <div className="classes-tabs flex justify-center gap-4 mb-8 flex-wrap" style={{ marginBottom: '3rem' }}>
-                    <button
-                        onClick={() => setActiveTab('reformer')}
-                        className={`btn ${activeTab === 'reformer' ? 'btn-primary' : 'btn-outline'}`}
-                    >
-                        <FaRunning className="inline mr-2" /> Reformer
-                    </button>
-                    <button
-                        onClick={() => setActiveTab('yoga')}
-                        className={`btn ${activeTab === 'yoga' ? 'btn-primary' : 'btn-outline'}`}
-                    >
-                        <FaSpa className="inline mr-2" /> Yoga
-                    </button>
-                    <button
-                        onClick={() => setActiveTab('mat')}
-                        className={`btn ${activeTab === 'mat' ? 'btn-primary' : 'btn-outline'}`}
-                    >
-                        <FaChild className="inline mr-2" /> Mat Pilates
-                    </button>
-                    <button
-                        onClick={() => setActiveTab('pregnant')}
-                        className={`btn ${activeTab === 'pregnant' ? 'btn-primary' : 'btn-outline'}`}
-                    >
-                        <FaFemale className="inline mr-2" /> Hamile
-                    </button>
+                <div className="classes-tabs-container mb-8" style={{ marginBottom: '3rem' }}>
+                    <div className="classes-tabs flex justify-start md:justify-center gap-4 flex-nowrap overflow-x-auto pb-4 px-2" style={{
+                        display: 'flex',
+                        flexWrap: 'nowrap',
+                        overflowX: 'auto',
+                        WebkitOverflowScrolling: 'touch',
+                        scrollbarWidth: 'none',
+                        msOverflowStyle: 'none'
+                    }}>
+                        <button
+                            onClick={() => setActiveTab('reformer')}
+                            className={`btn flex-shrink-0 ${activeTab === 'reformer' ? 'btn-primary' : 'btn-outline'}`}
+                            style={{ flexShrink: 0 }}
+                        >
+                            <FaRunning className="inline mr-2" /> Reformer
+                        </button>
+                        <button
+                            onClick={() => setActiveTab('yoga')}
+                            className={`btn flex-shrink-0 ${activeTab === 'yoga' ? 'btn-primary' : 'btn-outline'}`}
+                            style={{ flexShrink: 0 }}
+                        >
+                            <FaSpa className="inline mr-2" /> Yoga
+                        </button>
+                        <button
+                            onClick={() => setActiveTab('mat')}
+                            className={`btn flex-shrink-0 ${activeTab === 'mat' ? 'btn-primary' : 'btn-outline'}`}
+                            style={{ flexShrink: 0 }}
+                        >
+                            <FaChild className="inline mr-2" /> Mat Pilates
+                        </button>
+                        <button
+                            onClick={() => setActiveTab('pregnant')}
+                            className={`btn flex-shrink-0 ${activeTab === 'pregnant' ? 'btn-primary' : 'btn-outline'}`}
+                            style={{ flexShrink: 0 }}
+                        >
+                            <FaFemale className="inline mr-2" /> Hamile
+                        </button>
+                    </div>
                 </div>
 
                 <div className="class-content-wrapper" style={{ maxWidth: '900px', margin: '0 auto' }}>

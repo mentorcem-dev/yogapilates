@@ -444,4 +444,13 @@ img {
   .contact-form-card {
     padding: 0 !important;
   }
+
+  .classes-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .classes-tabs {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
