@@ -1,0 +1,133 @@
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.navbar.active,
+.navbar-inner {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    height: 70px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-logo {
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.logo-accent {
+    color: var(--primary);
+    font-style: italic;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item {
+    height: 80px;
+}
+
+.nav-links {
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links:hover {
+    color: var(--primary);
+}
+
+.mobile-only {
+    display: none;
+}
+
+.nav-btn {
+    margin-left: 20px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        /* Navbar height */
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        background: var(--light);
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+        z-index: 500;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
