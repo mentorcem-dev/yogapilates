@@ -422,6 +422,14 @@ img {
     flex-direction: column;
   }
 
+  .items-center-mobile {
+    align-items: center;
+  }
+
+  .justify-center-mobile {
+    justify-content: center;
+  }
+
   .text-center-mobile {
     text-align: center;
   }

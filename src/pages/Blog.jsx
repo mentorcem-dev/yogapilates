@@ -193,14 +193,15 @@ const BlogSection = () => {
                                 }}
                             >
                                 <div className="p-8">
-                                    <div className="flex items-start gap-4 mb-4">
+                                    <div className="flex flex-col-mobile items-center-mobile text-center-mobile gap-4 mb-4">
                                         <div
                                             className="bg-primary/10 p-4 rounded-full"
                                             style={{
                                                 background: 'rgba(139, 157, 131, 0.1)',
                                                 padding: '1rem',
                                                 borderRadius: '50%',
-                                                flexShrink: 0
+                                                flexShrink: 0,
+                                                display: 'inline-flex'
                                             }}
                                         >
                                             <IconComponent
@@ -249,13 +250,15 @@ const BlogSection = () => {
                                         />
                                     )}
 
-                                    <button
-                                        onClick={() => toggleArticle(article.id)}
-                                        className="mt-6 btn btn-outline"
-                                        style={{ marginTop: '1.5rem' }}
-                                    >
-                                        {isExpanded ? 'Daha Az Göster' : 'Devamını Oku'}
-                                    </button>
+                                    <div className="text-center-mobile">
+                                        <button
+                                            onClick={() => toggleArticle(article.id)}
+                                            className="mt-6 btn btn-outline"
+                                            style={{ marginTop: '1.5rem' }}
+                                        >
+                                            {isExpanded ? 'Daha Az Göster' : 'Devamını Oku'}
+                                        </button>
+                                    </div>
                                 </div>
                             </motion.article>
                         );

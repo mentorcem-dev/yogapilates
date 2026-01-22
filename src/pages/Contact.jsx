@@ -11,7 +11,7 @@ const ContactSection = () => {
                 </div>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col md:flex-row justify-center gap-4 mb-12" style={{ marginBottom: '3rem' }}>
+                <div className="flex flex-col md:flex-row justify-center items-center-mobile gap-4 mb-12" style={{ marginBottom: '3rem' }}>
                     <a
                         href="https://wa.me/905302312947"
                         target="_blank"
@@ -54,8 +54,8 @@ const ContactSection = () => {
                         <h3 className="text-2xl font-bold mb-6" style={{ marginBottom: '1.5rem' }}>İletişim Bilgileri</h3>
 
                         <div className="space-y-6" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                            <div className="flex items-start gap-4">
-                                <div className="bg-primary/10 p-3 rounded-full text-primary" style={{ background: '#e6fffa', padding: '10px', borderRadius: '50%', color: 'var(--primary)' }}>
+                            <div className="flex flex-col-mobile items-center-mobile text-center-mobile gap-4">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary" style={{ background: '#e6fffa', padding: '10px', borderRadius: '50%', color: 'var(--primary)', display: 'inline-flex' }}>
                                     <FaMapMarkerAlt size={20} />
                                 </div>
                                 <div>
@@ -64,8 +64,8 @@ const ContactSection = () => {
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-4">
-                                <div className="bg-primary/10 p-3 rounded-full text-primary" style={{ background: '#e6fffa', padding: '10px', borderRadius: '50%', color: 'var(--primary)' }}>
+                            <div className="flex flex-col-mobile items-center-mobile text-center-mobile gap-4">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary" style={{ background: '#e6fffa', padding: '10px', borderRadius: '50%', color: 'var(--primary)', display: 'inline-flex' }}>
                                     <FaPhone size={20} />
                                 </div>
                                 <div>
@@ -74,8 +74,8 @@ const ContactSection = () => {
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-4">
-                                <div className="bg-primary/10 p-3 rounded-full text-primary" style={{ background: '#e6fffa', padding: '10px', borderRadius: '50%', color: 'var(--primary)' }}>
+                            <div className="flex flex-col-mobile items-center-mobile text-center-mobile gap-4">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary" style={{ background: '#e6fffa', padding: '10px', borderRadius: '50%', color: 'var(--primary)', display: 'inline-flex' }}>
                                     <FaWhatsapp size={20} />
                                 </div>
                                 <div>
@@ -84,8 +84,8 @@ const ContactSection = () => {
                                 </div>
                             </div>
 
-                            <div className="flex items-start gap-4">
-                                <div className="bg-primary/10 p-3 rounded-full text-primary" style={{ background: '#e6fffa', padding: '10px', borderRadius: '50%', color: 'var(--primary)' }}>
+                            <div className="flex flex-col-mobile items-center-mobile text-center-mobile gap-4">
+                                <div className="bg-primary/10 p-3 rounded-full text-primary" style={{ background: '#e6fffa', padding: '10px', borderRadius: '50%', color: 'var(--primary)', display: 'inline-flex' }}>
                                     <FaEnvelope size={20} />
                                 </div>
                                 <div>

@@ -90,7 +90,7 @@ const PricingSection = () => {
 
                             <ul className="mb-8 w-full space-y-3" style={{ textAlign: 'left', width: '100%', marginBottom: '2rem' }}>
                                 {pkg.features.map((feature, i) => (
-                                    <li key={i} className="flex items-center gap-3" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '0.5rem' }}>
+                                    <li key={i} className="flex items-center justify-center-mobile gap-3" style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '0.5rem' }}>
                                         <FaCheck style={{ color: 'var(--primary)', fontSize: '0.8rem' }} />
                                         <span style={{ fontSize: '0.95rem' }}>{feature}</span>
                                     </li>

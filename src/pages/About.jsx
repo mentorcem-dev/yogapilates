@@ -24,6 +24,7 @@ const AboutSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
+                        className="items-center-mobile text-center-mobile"
                     >
                         <h4 className="text-primary font-bold tracking-wider mb-2" style={{ color: 'var(--primary)', letterSpacing: '2px', textTransform: 'uppercase', fontWeight: 700 }}>HAKKIMIZDA</h4>
                         <h2 className="text-4xl font-bold mb-6" style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Denge, Güç ve Esneklik</h2>
@@ -38,7 +39,7 @@ const AboutSection = () => {
 
                         <div className="grid grid-cols-2 gap-4">
                             {['Uzman Eğitmenler', 'Hijyenik Ortam', 'Kişiye Özel Program', 'Merkezi Lokasyon'].map((item, i) => (
-                                <div key={i} className="flex items-center gap-2" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <div key={i} className="flex items-center-mobile justify-center-mobile gap-2" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                                     <FaCheck className="text-primary" />
                                     <span>{item}</span>
                                 </div>

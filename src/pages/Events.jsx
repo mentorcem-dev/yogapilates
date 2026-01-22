@@ -84,7 +84,7 @@ const EventsSection = () => {
                                 borderRadius: '0 0 0 100%'
                             }}></div>
 
-                            <h3 style={{
+                            <h3 className="text-center-mobile" style={{
                                 fontSize: '1.4rem',
                                 fontWeight: '700',
                                 marginBottom: '1rem',
@@ -93,7 +93,7 @@ const EventsSection = () => {
                                 {event.title}
                             </h3>
 
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1rem' }}>
+                            <div className="items-center-mobile" style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1rem' }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                                     <FaCalendarAlt style={{ color: event.color, fontSize: '1rem' }} />
                                     <span style={{ fontWeight: '600' }}>{event.day}</span>
@@ -108,7 +108,7 @@ const EventsSection = () => {
                                 </div>
                             </div>
 
-                            <p style={{
+                            <p className="text-center-mobile" style={{
                                 color: '#666',
                                 fontSize: '0.95rem',
                                 marginBottom: '1rem',
@@ -117,7 +117,7 @@ const EventsSection = () => {
                                 {event.description}
                             </p>
 
-                            <div style={{
+                            <div className="text-center-mobile" style={{
                                 fontSize: '0.85rem',
                                 color: '#888',
                                 marginBottom: '1rem'
